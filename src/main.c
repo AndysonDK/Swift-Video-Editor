@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main() {
-	printf("loool");
+  printf("loool");
 
-	return 0;
+  return 0;
 }
+
+
