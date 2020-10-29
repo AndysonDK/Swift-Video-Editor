@@ -10,5 +10,15 @@
   },
   "homepage": "https://github.com/AndysonDK/Swift-Video-Editor#readme",
   "private": true,
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start"
+    },
+    "next": "^10.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
