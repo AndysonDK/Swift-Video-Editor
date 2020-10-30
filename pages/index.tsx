@@ -1,20 +1,20 @@
-import dynamic from 'next/dynamic'
-import Link from 'next/link'
+import dynamic from 'next/dynamic';
+import { useEffect } from 'react';
 
-//const RustComponent = dynamic(() => import('../cbin/main.wasm'), { ssr: false });
+//const wasmModule = dynamic(() => import('../cbin/main.wasm'), {ssr: false});
 
-const Page = ({ router: { query } }) => {
+const Index = () => {
+  useEffect(async () => {
 
-  useEffect(() => {
-    const wasm = import('../cbin/main.wasm');
+    const wasmModule = await import('../cbin/main.wasm')
+    console.log(wasmModule);
 
-    wasm.then(() => {
-      console.log("bob");
-    });
+    //const lol: number = wasmModule.add(2, 2);
+    //const wasm = await import('../cbin/main.js');
 
   }, []);
 
   return <p>loool</p>;
 };
 
-export default Page;
+export default Index;

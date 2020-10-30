@@ -1,9 +1,6 @@
-#include <stdio.h>
+#include <emscripten.h>
 
-int main() {
-  printf("loool");
-
-  return 0;
+EMSCRIPTEN_KEEPALIVE
+int add(int x, int y) {
+  return x + y;
 }
-
-
