@@ -6,7 +6,8 @@ import { useEffect } from 'react';
 const Index = () => {
   useEffect(async () => {
 
-    const wasmModule = await import('../cbin/main.wasm')
+    const wasmModule = await import('../bin/main.wasm')
+    console.log(wasmModule.c(10, 3));
     console.log(wasmModule);
 
     //const lol: number = wasmModule.add(2, 2);
