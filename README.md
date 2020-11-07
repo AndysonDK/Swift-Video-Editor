@@ -3,7 +3,7 @@ A web app that can edit video files, like splicing them together, cutting them, 
 
 ### How to run
 
-From inside of the src directory run the following comamnd 
+From inside of the src directory run the following command
 if you are using Linux to compile the main.c file to webassembly with some JavaScript "glue" code
 
 `emcc -O2 ../src/main.c -o main.js`
